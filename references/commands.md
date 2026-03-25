@@ -50,6 +50,17 @@ All commands support: `-f table|json|yaml|md|csv` and `-v` (verbose/debug).
 
 ---
 
+## Google
+
+| Command | Args | Description |
+|---------|------|-------------|
+| `google news` | `[keyword]` (可选，无关键词则头条), `--limit N` (default 20) | Google 新闻 |
+| `google search` | `<keyword>` (required), `--limit N` (default 20) | Google 搜索 |
+| `google suggest` | `<keyword>` (required) | Google 搜索建议/补全 |
+| `google trends` | `--limit N` (default 20) | Google Trends 每日热门搜索 |
+
+---
+
 ## HackerNews
 
 | Command | Args | Description |

@@ -1,7 +1,7 @@
 ---
 name: opencli
 description: |
-  Use opencli CLI to interact with social/content websites (Bilibili, Zhihu, Twitter/X, YouTube, Weibo, 小红书, V2EX, Reddit, HackerNews, 雪球, BOSS直聘 etc.) via the user's Chrome login session. ALWAYS prefer opencli over playwright/browser automation for these supported sites. Triggers: user asks to browse, search, fetch hot/trending content, post, or read messages on any supported site; 查B站热门, 搜知乎, 看微博热搜, 发推, 搜YouTube, 查股票行情 etc.
+  Use opencli CLI to interact with social/content websites (Bilibili, Zhihu, Twitter/X, YouTube, Weibo, 小红书, V2EX, Reddit, HackerNews, 雪球, BOSS直聘, Google etc.) via the user's Chrome login session. ALWAYS prefer opencli over playwright/browser automation for these supported sites. Triggers: user asks to browse, search, fetch hot/trending content, post, or read messages on any supported site; 查B站热门, 搜知乎, 看微博热搜, 发推, 搜YouTube, 查股票行情, Google搜索, 看谷歌新闻 etc.
 ---
 
 # opencli
@@ -33,8 +33,11 @@ opencli hackernews top --limit 20 -f json
 opencli v2ex hot -f json
 opencli reddit hot -f json
 opencli xiaohongshu feed -f json
+opencli google news -f json
+opencli google trends -f json
 
 # 搜索
+opencli google search "AI news" -f json
 opencli bilibili search --keyword "AI" -f json
 opencli zhihu search --keyword "大模型" -f json
 opencli twitter search --query "claude AI" -f json
@@ -187,4 +190,4 @@ columns: [rank, name, ...]
 
 ## Full Command Reference
 
-See [references/commands.md](references/commands.md) for all 55 commands with complete argument details.
+See [references/commands.md](references/commands.md) for all commands with complete argument details.
