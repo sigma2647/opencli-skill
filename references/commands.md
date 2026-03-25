@@ -48,6 +48,12 @@ opencli web read --url "https://example.com" -f json
 opencli web read --url "https://example.com" -f md
 ```
 
+
+需要手动读取
+
+web-articles
+web-articles/title/*.md
+
 ---
 
 ## arxiv (学术论文)
